@@ -12,8 +12,9 @@ public class Main {
         a.hello();
         b.hello();
         System.out.printf("%.2f\n",a.calcBMI()); 
-        
+         
         System.out.println(a.myHeath());
-
+        a.setHeight(-88);
+        System.out.println(a.getHeight());
     }
 }

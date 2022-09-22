@@ -1,7 +1,7 @@
 public class Human {
     private String n;
-    double h;
-    double w;
+    private double h;
+    private double w;
     private double bmi;
 
     public Human(String name, double height, double weight) {
@@ -10,6 +10,22 @@ public class Human {
         w = weight;
         bmi = w / ((h/100.0)*(h/100.0));
     }
+    public double getHeight() {
+        return h;
+    }
+    public void setHeight(double height) {
+        if(height<0){
+            System.out.println("請設定大於0的值!!");;
+        } else {
+             h = height;
+        }
+    }
+    public double getWeight() {
+        return w;
+    }    
+    public void setWeight(double weight) {
+        w = weight;
+    }    
     public String getName() {
         return n;
     }
